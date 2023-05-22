@@ -242,6 +242,13 @@ body{
     grid-template-columns: 1fr 1fr;
     gap: 0 20px;
   }
+&__main-first img:not(.ecommerce-link-2-text),
+&__main-second img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
   &__main-first{
     display: grid;
     grid-template-columns: 259px 259px;

@@ -7,7 +7,6 @@
     }
   }
   .container__second{
-    // display: none;
     grid-template-rows: 1fr 800px;
     &-ellipse:nth-child(3){
       padding: 650px 60px 0 0;
@@ -15,7 +14,6 @@
 
   }
   .container__third{
-    // display: none;
     grid-template-columns: 1200px;
     grid-template-rows: 1fr 1750px;
   }
@@ -253,6 +251,7 @@
     z-index: 2;
     font-size: 25px;
   }
+
   
   /*navigation list*/
 .nav__container {
@@ -319,11 +318,11 @@
   grid-template-rows: repeat(7, 50px);
   gap: 20px 0;
   position: absolute;
-  width: 350px;
+  width: 210px;
   border-radius: 100% 0% 100% 0% / 6% 92% 8% 94%;
   height: 600px;
-  margin: -50px 0 0 -240px;
-  padding: 100px 50px 50px 100px;
+  margin: -50px 0 0 -150px;
+  padding: 100px 0px 50px 20px;
   background: #1BBD32;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -334,6 +333,7 @@
 .ecommerce__nav-list-item-link{
   color: $textColor;
   font-size: 20px;
+  padding: 8px 0 0 0;
 }
 .ecommerce__nav-list-item{
   color: $textColor;
@@ -396,7 +396,7 @@
   }
   .ecommerce{
     &__header{
-      margin: 120px 70px 0 0;
+      margin: 120px 90px 0 0;
       gap: 0 50px;
     }
     &__main{
@@ -434,29 +434,24 @@
   }
   .ecommerce__nav-title{
     top: 50px;
-    left: -320px;
+    left: -330px;
     font-size: 20px;
   }
   .nav__container{
     top: 60px;
-    right: 230px;
+    right: 240px;
   }
   .ecommerce__nav{
     &-logo{
       position: absolute;
       top: -10px;
-      left: 210px;
+      left: 190px;
       padding: 0 0 0 0;
     }
   }
-  .ecommerce__nav-list{
-    width: 210px;
-    margin: -50px 0 0 -140px;
-    padding: 100px 50px 50px 4px;
-  }
   .burger__container{
     top: 65px;
-    right: 145px;
+    right: 155px;
   }
 }
 @media (max-width: 540px){
@@ -471,6 +466,10 @@
     grid-template-columns: 400px;
   }
   .ecommerce{
+    &__header{
+      margin: 120px 90px 0 0;
+      gap: 0 50px;
+    }
     &__main-first{
       grid-template-columns: 349px;
       grid-template-rows: 120px 120px 380px 380px;
@@ -502,10 +501,10 @@
 
   }
   .ecommerce__nav-title{
-    left: -270px;
+    left: -280px;
   }
   .nav__container{
-    right: 180px;
+    right: 190px;
   }
   .ecommerce__nav{
     &-logo{
@@ -513,32 +512,35 @@
     }
   }
   .burger__container{
-    right: 95px;
+    right: 105px;
   }
 }
 @media (max-width: 445px){
   .container__second{
     grid-template-columns: 280px;
-    grid-template-rows: 1fr 1800px;
+    grid-template-rows: 1fr 1820px;
   }
   .container__third{
-    grid-template-columns: 280px;
+    grid-template-columns: 320px;
   }
   .ecommerce{
+    &__header{
+      margin: 120px 90px 0 0;
+    }
     &__main-first{
-      grid-template-columns: 249px;
-      grid-template-rows: 80px 80px 380px 380px;
+      grid-template-columns: 300px;
+      grid-template-rows: 100px 100px 380px 380px;
     }
     &__main-second{
-      grid-template-columns: 249px;
-      grid-template-rows: 380px 380px 80px 80px;
+      grid-template-columns: 300px;
+      grid-template-rows: 380px 380px 100px 100px;
     }
     &-link-1-text{
       font-size: 15px;
     }
     &-link-3-text,
     &-link-4-text {
-      transform: translate(3%, 20%);
+      transform: translate(10%, 40%);
       max-width: 170px;
     }
     &-link-3-text-big,
@@ -556,20 +558,57 @@
 
   }
   .ecommerce__nav-title{
-    left: -210px;
+    left: -240px;
   }
   .nav__container{
-    right: 120px;
+    right: 150px;
+  }
+  .ecommerce__nav{
+    &-logo{
+      left: 110px;
+    }
+  }
+  .burger__container{
+    right: 65px;
+  }
+  .menu__list{
+    margin: -90px 0 0 -110px;
+  }
+}
+@media (max-width: 350px){
+  .container__second{
+    grid-template-rows: 1fr 1780px;
+  }
+  .container__third{
+    grid-template-columns: 290px;
+  }
+  .ecommerce{
+    &__main-first{
+      grid-template-columns: 280px;
+      grid-template-rows: 90px 90px 380px 380px;
+    }
+    &__main-second{
+      grid-template-columns: 280px;
+      grid-template-rows: 380px 380px 90px 90px;
+    }
+  }
+  .ecommerce__nav-title{
+    left: -220px;
+  }
+  .nav__container{
+    right: 135px;
   }
   .ecommerce__nav{
     &-logo{
       left: 90px;
     }
   }
-  .burger__container{
-    right: 35px;
+  .ecommerce__nav-list{
+    width: 190px;
+    margin: -50px 0 0 -135px;
+    padding: 100px 0px 50px 15px;
   }
-  .menu__list{
-    margin: -90px 0 0 -110px;
+  .burger__container{
+    right: 50px;
   }
 }
